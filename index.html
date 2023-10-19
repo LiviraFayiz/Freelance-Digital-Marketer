@@ -25,6 +25,31 @@
     <meta name="theme-color" content="#ffffff">
     <link href="./output.css" rel="stylesheet">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+ /* Landscape layout for testimonials */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex: 1;
+    max-width: calc(33.33% - 16px); /* 3 columns with some spacing */
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+/* Adjust the layout for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        max-width: 100%;
+    }
+}
+
 </head>
 <body>
     <header class="fixed w-full">
@@ -288,33 +313,35 @@
             <!-- Row -->
       </section>
     <!-- End block -->
- <section class="bg-gray-50 dark:bg-gray-800">
+ <section class="bg-green-200 dark:bg-gray-800">
     <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <!-- Testimonial 1 -->
-        <div class="testimonial">
-            <div class="testimonial-content">
-                <p class="mb-4">"Testimonial 1 content here."</p>
-                <p class="mb-2">- John Doe</p>
+        <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="mb-4">"Testimonial 1 content here."</p>
+                    <p class="mb-2">- John Doe</p>
+                </div>
+                <button class="open-popup-button">Read More</button>
             </div>
-            <button class="open-popup-button">Read More</button>
-        </div>
-        
-        <!-- Testimonial 2 -->
-        <div class="testimonial">
-            <div class="testimonial-content">
-                <p class="mb-4">"Testimonial 2 content here."</p>
-                <p class="mb-2">- Jane Smith</p>
-            </div>
-            <button class="open-popup-button">Read More</button>
-        </div>
 
-        <!-- Testimonial 3 -->
-        <div class="testimonial">
-            <div class="testimonial-content">
-                <p class="mb-4">"Testimonial 3 content here."</p>
-                <p class="mb-2">- Bob Johnson</p>
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="mb-4">"Testimonial 2 content here."</p>
+                    <p class="mb-2">- Jane Smith</p>
+                </div>
+                <button class="open-popup-button">Read More</button>
             </div>
-            <button class="open-popup-button">Read More</button>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p class="mb-4">"Testimonial 3 content here."</p>
+                    <p class="mb-2">- Bob Johnson</p>
+                </div>
+                <button class="open-popup-button">Read More</button>
+            </div>
         </div>
     </div>
 </section>
