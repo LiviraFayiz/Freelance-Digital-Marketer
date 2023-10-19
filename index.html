@@ -27,28 +27,6 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
-.testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.testimonial {
-    flex: 1;
-    max-width: calc(33.33% - 16px); /* 3 columns with some spacing */
-    margin-right: 16px;
-    margin-bottom: 16px;
-}
-
-
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-    }
-
-    .testimonial {
-        max-width: 100%;
-    }
-}
 
 </head>
 <body>
@@ -320,14 +298,20 @@
 <head>
     <style>
         .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
-            background-color: #e4f9e5; /* Light green background color */
+            background-color: #c9f7e7; /* Light green background color */
             position: relative;
             max-width: 100%;
+            height: 300px; /* Adjust the height as needed */
         }
         
         .testimonial-slider {
             display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center;
             transition: transform 0.5s ease-in-out;
         }
         
@@ -344,19 +328,20 @@
 </head>
 <body>
     <section class="bg-gray-50 dark-bg-gray-800">
+        <h2>Customer Testimonials</h2>
         <div class="testimonial-container">
             <div class="testimonial-slider">
                 <div class="testimonial">
-                    <p>I'm impressed by Livira's professionalism and competence. As a manager looking for a freelance digital marketer in Malappuram, I found exactly what I needed.</p>
-                    <p>- SEDEEDH</p>
+                    <p>Testimonial 1 content goes here.</p>
+                    <p>- Testimonial Author 1</p>
                 </div>
                 <div class="testimonial">
-                    <p>I approached Livira for my company to boost our online visibility. As digital marketing strategist in Malappuram they well served with the consultation and services.</p>
-                    <p>- ATHUL</p>
+                    <p>Testimonial 2 content goes here.</p>
+                    <p>- Testimonial Author 2</p>
                 </div>
-                <div class "testimonial">
-                    <p>Livira in Malappuram offers exceptional digital marketing consultation and a wide range of services, making a significant impact on our online visibility.</p>
-                    <p>- ISHWARYA</p>
+                <div class="testimonial">
+                    <p>Testimonial 3 content goes here.</p>
+                    <p>- Testimonial Author 3</p>
                 </div>
             </div>
         </div>
