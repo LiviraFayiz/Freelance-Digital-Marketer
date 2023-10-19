@@ -289,28 +289,44 @@
       </section>
     <!-- End block -->
  <section class="bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
-        <div class="relative">
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <img src="testimonial1.jpg" alt="Testimonial 1">
-                    <h3>John Doe</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                </div>
-                <div class="testimonial">
-                    <img src="testimonial2.jpg" alt="Testimonial 2">
-                    <h3>Jane Smith</h3>
-                    <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                </div>
-                <div class="testimonial">
-                    <img src="testimonial3.jpg" alt="Testimonial 3">
-                    <h3>Bob Johnson</h3>
-                    <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."</p>
-                </div>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p class="mb-4">"Testimonial 1 content here."</p>
+                <p class="mb-2">- John Doe</p>
             </div>
+            <button class="open-popup-button">Read More</button>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p class="mb-4">"Testimonial 2 content here."</p>
+                <p class="mb-2">- Jane Smith</p>
+            </div>
+            <button class="open-popup-button">Read More</button>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p class="mb-4">"Testimonial 3 content here."</p>
+                <p class="mb-2">- Bob Johnson</p>
+            </div>
+            <button class="open-popup-button">Read More</button>
         </div>
     </div>
 </section>
+
+<!-- Testimonial Popup -->
+<div class="testimonial-popup">
+    <div class="testimonial-popup-content">
+        <div class="close-popup-button">Close</div>
+        <p class="popup-testimonial-content"></p>
+    </div>
+</div>
+
 
 
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
