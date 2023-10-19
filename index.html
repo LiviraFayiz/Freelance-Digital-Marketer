@@ -313,46 +313,76 @@
             <!-- Row -->
       </section>
     <!-- End block -->
- <section class="bg-green-200 dark:bg-gray-800">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .testimonial-container {
+            overflow: hidden;
+            background-color: #e4f9e5; /* Light green background color */
+            position: relative;
+            max-width: 100%;
+        }
+        
+        .testimonial-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .testimonial {
+            flex: 0 0 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <section class="bg-gray-50 dark-bg-gray-800">
         <div class="testimonial-container">
-            <!-- Testimonial 1 -->
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p class="mb-4">"Testimonial 1 content here."</p>
-                    <p class="mb-2">- John Doe</p>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>I'm impressed by Livira's professionalism and competence. As a manager looking for a freelance digital marketer in Malappuram, I found exactly what I needed.</p>
+                    <p>- SEDEEDH</p>
                 </div>
-                <button class="open-popup-button">Read More</button>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p class="mb-4">"Testimonial 2 content here."</p>
-                    <p class="mb-2">- Jane Smith</p>
+                <div class="testimonial">
+                    <p>I approached Livira for my company to boost our online visibility. As digital marketing strategist in Malappuram they well served with the consultation and services.</p>
+                    <p>- ATHUL</p>
                 </div>
-                <button class="open-popup-button">Read More</button>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <p class="mb-4">"Testimonial 3 content here."</p>
-                    <p class="mb-2">- Bob Johnson</p>
+                <div class "testimonial">
+                    <p>Livira in Malappuram offers exceptional digital marketing consultation and a wide range of services, making a significant impact on our online visibility.</p>
+                    <p>- ISHWARYA</p>
                 </div>
-                <button class="open-popup-button">Read More</button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Testimonial Popup -->
-<div class="testimonial-popup">
-    <div class="testimonial-popup-content">
-        <div class="close-popup-button">Close</div>
-        <p class="popup-testimonial-content"></p>
-    </div>
-</div>
+    <script>
+        const slider = document.querySelector('.testimonial-slider');
+        let slideIndex = 0;
+        
+        function nextSlide() {
+            if (slideIndex < 2) {
+                slideIndex++;
+            } else {
+                slideIndex = 0;
+            }
+            updateSlider();
+        }
+        
+        function updateSlider() {
+            slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
 
 
 
